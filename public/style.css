@@ -1,0 +1,638 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3em;
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0056b3;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #007bff;
+}
+
+.appointment-btn {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.appointment-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e0f2f7; /* Light blue background */
+    text-align: center;
+    padding: 100px 0;
+    min-height: 500px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 4.5em;
+    color: #0056b3;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+    font-size: 2.8em;
+    color: #ff9800; /* Orange color for the slogan */
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.hero-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 18px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* NEW: Services and Prices Section */
+.services-prices {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.services-prices-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Services list wider than prices block */
+    gap: 50px;
+    align-items: start;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.services-list .service-card {
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.services-list .service-card:hover {
+    transform: translateY(-5px);
+}
+
+.services-list .service-card h3 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-list .service-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.prices-block {
+    background-color: #e6f7ff; /* Light blue background for prices */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.prices-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.prices-block h3 {
+    color: #0056b3;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.prices-block ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.prices-block ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #cce7ff; /* Light dashed border */
+    font-size: 18px;
+    color: #333;
+}
+
+.prices-block ul li:last-child {
+    border-bottom: none;
+}
+
+.prices-block ul li span {
+    color: #ff9800;
+    font-weight: 700;
+}
+
+.all-prices-btn {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.all-prices-btn:hover {
+    background-color: #e68900;
+    transform: translateY(-2px);
+}
+
+/* NEW: Our Specialists Section */
+.our-specialists {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.specialist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Larger cards */
+    gap: 40px;
+    justify-content: center;
+}
+
+.specialist-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specialist-card img {
+    width: 200px; /* Larger image */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    border: 5px solid #007bff;
+    box-shadow: 0 0 15px rgba(0,123,255,0.3); /* Subtle glow */
+}
+
+.specialist-card h3 {
+    color: #0056b3;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.specialist-card .specialty {
+    font-size: 18px;
+    color: #ff9800;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.specialist-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: #e0f2f7; /* Light blue background for reviews */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Three columns */
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.review-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-3px);
+}
+
+.review-card h3 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.review-date {
+    display: block;
+    font-size: 0.9em;
+    color: #888;
+    text-align: right;
+}
+
+/* Review Form */
+.review-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review-form h3 {
+    color: #0056b3;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.review-form input[type="text"],
+.review-form textarea {
+    width: calc(100% - 22px); /* Adjust for padding+border */
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+.review-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.review-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.review-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #a7d9e7; /* Light blue background for contacts */
+    padding: 80px 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Form wider than info/map */
+    gap: 50px;
+    align-items: start;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form h3 {
+    color: #0056b3;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.contact-info-map {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-block {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-block p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 1.15em;
+    color: #333;
+}
+
+.info-block p:last-child {
+    margin-bottom: 0;
+}
+
+.info-block img {
+    height: 28px; /* Larger icons */
+    margin-right: 15px;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 300px; /* Taller map */
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.map-placeholder iframe {
+    border: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .services-prices-grid,
+    .specialist-grid,
+    .contact-content {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+
+    .prices-block, .contact-info-map {
+        margin-top: 40px; /* Add space when stacked */
+    }
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+    .hero h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Allow nav links to wrap */
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 8px 10px;
+    }
+
+    .header-btn {
+        margin-top: 15px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .specialist-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-form, .contact-form, .info-block {
+        padding: 30px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer nav ul {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.2em;
+    }
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-button, .appointment-btn, .all-prices-btn, .review-form button, .contact-form button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .services-list .service-card, .prices-block, .specialist-card, .review-card {
+        padding: 20px;
+    }
+
+    .prices-block ul li, .info-block p {
+        font-size: 16px;
+    }
+
+    .map-placeholder {
+        height: 250px;
+    }
+}

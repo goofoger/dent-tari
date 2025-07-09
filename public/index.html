@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЕНТ-ТАРІ - Посміхайтеся! Вам личить!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="ДЕНТ-ТАРІ Лого">
+                <span>ДЕНТ-ТАРІ</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Головна</a></li>
+                    <li><a href="#services-prices">Послуги та ціни</a></li>
+                    <li><a href="#our-specialists">Наші спеціалісти</a></li>
+                    <li><a href="#reviews">Відгуки</a></li>
+                    <li><a href="#contact-us">Контакти</a></li>
+                </ul>
+            </nav>
+     <a href="#contact-us"> <button class="appointment-btn header-btn">Записатися</button></a>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1>ДЕНТ-ТАРІ</h1>
+            <h2>Посміхайтеся! Вам личить!</h2>
+           <a href="#contact-us"> <button class="hero-button">Записатися на прийом</button></a>
+        </div>
+    </section>
+
+    <section class="services-prices" id="services-prices">
+        <div class="container">
+            <h2>Послуги та ціни</h2>
+            <div class="services-prices-grid">
+                <div class="services-list">
+                    <div class="service-card">
+                        <h3>Діагностика + план лікування</h3>
+                        <p>Первинний огляд, консультація та складання плану лікування.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Сучасне пломбування</h3>
+                        <p>Використання якісних фотополімерних матеріалів для довговічності.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Видалення зубів</h3>
+                        <p>Атравматичне видалення зубів будь-якої складності.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Естетична реставрація</h3>
+                        <p>Відновлення форми та кольору зубів для ідеальної посмішки.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Протезування зубів</h3>
+                        <p>Встановлення коронок, мостів та інших видів протезів.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Професійна гігієна</h3>
+                        <p>Комплексне чищення, видалення зубного каменю та нальоту.</p>
+                    </div>
+                </div>
+                <div class="prices-block">
+                    <img src="image_bcd6dc.png" alt="Стоматологічний кабінет">
+                    <h3>Прайс</h3>
+                    <ul>
+                        <li>Первинна консультація <span>200 грн</span></li>
+                        <li>Фотополімерна пломба <span>від 1800 грн</span></li>
+                        <li>Професійна гігієна <span>1850 грн</span></li>
+                        <li>Металокерамічна коронка <span>4500 грн</span></li>
+                        <li>Реставрація зуба <span>3000 грн</span></li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="our-specialists" class="our-specialists">
+        <div class="container">
+            <h2>Наші спеціалісти</h2>
+            <div class="specialist-grid">
+                <div class="specialist-card">
+                    <img src="photo_2024-09-07_16-18-30.jpg" >
+                    <h3>Лащук Сергій Володимирович</h3>
+                    <p class="specialty">Лікар-стоматолог</p>
+                    <p>Досвідчений фахівець з 15-річним стажем. </p>
+                </div>
+                <div class="specialist-card">
+                    <img src="photo_2024-09-07_16-18-45.jpg" >
+                    <h3>Іщук Галина Миколаївна</h3>
+                    <p class="specialty">Лікар-стоматолог</p>
+                    <p>Дбайливий спеціаліст, яка знаходить підхід до кожного пацієнта. Проводить професійну гігієну та профілактику.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+    <section class="contact-us" id="contact-us">
+        <div class="container">
+            <h2>Зв'язатися з нами</h2>
+            <div class="contact-content">
+                <form id="appointmentForm" class="contact-form">
+                    <h3>Записатися на прийом</h3>
+                    <input type="text" id="name" placeholder="Ваше ім'я" required>
+                    <input type="tel" id="phone" placeholder="Ваш телефон" required>
+                    <input type="email" id="email" placeholder="Ваш Email" required>
+                    <textarea id="message" placeholder="Повідомлення (необов'язково)" rows="5"></textarea>
+                    <button type="submit">Відправити запис</button>
+                </form>
+                <div class="contact-info-map">
+                    <div class="info-block">
+                        <p>Телефон +38 (063) 411-36-32</p>
+                        <p>Email zubo.com@ukr.net</p>
+                        <p>Адреса м. Київ, вулиця Зодчих, 34А</p>
+                        <p>Години роботи Пн-Нд: 5:00 - 23:00</p>
+                    </div>
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.037337653349!2d30.368132076585912!3d50.421775971586754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb9719690299%3A0x1cf0230e7b162e16!2z0YPQuy4g0JfQvtC00YfQuNGFLCAzNNCQLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1728907110372!5m2!1sru!2sua" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2>Відгуки</h2>
+            <div id="reviews-container" class="reviews-grid">
+                <p>Відгуки завантажуються...</p>
+            </div>
+           
+            <h3>Залишити відгук</h3>
+            <form id="reviewForm" class="review-form">
+                <input type="text" id="reviewAuthor" placeholder="Ваше ім'я" required>
+                <textarea id="reviewContent" placeholder="Ваш відгук" rows="5" required></textarea>
+                <button type="submit">Надіслати відгук</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>© 2024 ДЕНТ-ТАРІ. Всі права захищені.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Політика конфіденційності</a></li>
+                    <li><a href="#">Умови використання</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        // Функція для завантаження відгуків
+        async function loadReviews() {
+            try {
+                const response = await fetch('/api/reviews');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const reviews = await response.json();
+                const reviewsContainer = document.getElementById('reviews-container');
+                reviewsContainer.innerHTML = ''; // Очистити існуючі відгуки
+
+                if (reviews.length === 0) {
+                    reviewsContainer.innerHTML = '<p>Відгуків поки немає.</p>';
+                } else {
+                    reviews.forEach(review => {
+                        const reviewCard = `
+                            <div class="review-card">
+                                <h3>${review.author}</h3>
+                                <p>${review.content}</p>
+                                <span class="review-date">${new Date(review.timestamp).toLocaleDateString()}</span>
+                            </div>
+                        `;
+                        reviewsContainer.insertAdjacentHTML('beforeend', reviewCard);
+                    });
+                }
+            } catch (error) {
+                console.error('Помилка завантаження відгуків:', error);
+                const reviewsContainer = document.getElementById('reviews-container');
+                reviewsContainer.innerHTML = '<p style="color: red;">Не вдалося завантажити відгуки. Перевірте консоль сервера.</p>';
+            }
+        }
+
+        // Завантажити відгуки при завантаженні сторінки
+        document.addEventListener('DOMContentLoaded', loadReviews);
+
+        // Обробник форми запису на прийом
+        const appointmentForm = document.getElementById('appointmentForm');
+        appointmentForm.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const data = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            try {
+                const response = await fetch('/api/appointments', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const result = await response.json();
+                if (response.ok) {
+                    alert(result.message);
+                    this.reset();
+                } else {
+                    alert('Помилка: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Помилка відправлення запису:', error);
+                alert('Виникла помилка під час відправлення запису.');
+            }
+        });
+
+        // Обробник форми відгуків
+        const reviewForm = document.getElementById('reviewForm');
+        reviewForm.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const data = {
+                author: document.getElementById('reviewAuthor').value,
+                content: document.getElementById('reviewContent').value
+            };
+
+            try {
+                const response = await fetch('/api/reviews', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const result = await response.json();
+                if (response.ok) {
+                    alert(result.message);
+                    this.reset();
+                    loadReviews(); // Перезавантажити відгуки
+                } else {
+                    alert('Помилка: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Помилка відправлення відгуку:', error);
+                alert('Виникла помилка під час відправлення відгуку.');
+            }
+        });
+
+        // Функціонал прокрутки для кнопок та навігації
+        document.querySelectorAll('a[href^="#"], .hero-button, .appointment-btn.header-btn, .all-reviews-btn').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                } else if (this.classList.contains('appointment-btn')) { // Only appointment button scrolls to contact
+                    document.getElementById('contact-us').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // NEW: Handle 'Усі ціни' button click to open PDF
+        document.querySelector('.all-prices-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('прайс4.pdf', '_blank'); // Open PDF in a new tab
+        });
+    </script>
+</body>
+</html>
